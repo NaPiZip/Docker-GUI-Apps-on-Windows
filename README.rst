@@ -1,109 +1,63 @@
-.. image:: http://pybee.org/project/projects/bridges/voc/voc.png
+.. image:: https://stapp.space/content/images/2016/05/docker_header1.png
     :width: 72px
-    :target: https://pybee.org/voc
+    :target:
 
-VOC
+Docker running GUI Applications on Windows
 ===
+.. image:: https://img.shields.io/badge/Document%20Version-1.0.0-brightgreen.svg
 
-.. image:: https://img.shields.io/pypi/pyversions/voc.svg
-    :target: https://pypi.python.org/pypi/voc
+.. image:: https://img.shields.io/badge/Docker-17.05.0--ce-blue.svg
+    :target: https://www.docker.com/
 
-.. image:: https://img.shields.io/pypi/v/voc.svg
-    :target: https://pypi.python.org/pypi/voc
+.. image:: https://img.shields.io/badge/Cygwin%2FX-7.7-blue.svg
+    :target: http://x.cygwin.com/
 
-.. image:: https://img.shields.io/pypi/status/voc.svg
-    :target: https://pypi.python.org/pypi/voc
+This is a tutorial showing how to run graphical user interface applications
+inside a Docker container on a Windows 10 host system using Cygwin/X.
 
-.. image:: https://img.shields.io/pypi/l/voc.svg
-    :target: https://github.com/pybee/voc/blob/master/LICENSE
+The following programs are needed for the installation:
 
-.. image:: https://travis-ci.org/pybee/voc.svg?branch=master
-    :target: https://travis-ci.org/pybee/voc
+* `Cygwin/X`
 
-.. image:: https://badges.gitter.im/pybee/general.svg
-    :target: https://gitter.im/pybee/general
+* `Docker` (Docker is assumed to be installed and working correctly)
 
-A transpiler that converts Python code into Java bytecode.
+.. _Cygwin/X: https://x.cygwin.com
+.. _Docker: https://www.docker.com/
 
-This is experimental code. If it breaks, you get to keep all the shiny pieces.
 
-What it does:
-
-* Provides an API to let you programmatically create Java class files.
-
-* Compiles Python 3.4 source files into Java class files, enabling you to run
-  Python code on a JVM (including Android's VM).
-
-It isn't a *completely* compliant Python 3.4 implementation - there are some
-language features (some builtin functions) that still need to be
-implemented, and there is only a bare bones standard library implementation.
-However, it is possible to convert simple Python programs, and even write
-simple Android applications.
-
-Tutorial
+Installation
 --------
 
-To take VOC for a spin, run through the `Getting Started guide`_, then start
-with `the first tutorial`_.
+1. Follow the instruction accordingly to this `link`.
 
-If you'd like to contribute to VOC development, we have a `guide for first time contributors`_.
+.. _link: https://x.cygwin.com/docs/ug/setup.html#setup-cygwin-x-installing
 
-.. _Getting Started guide: https://voc.readthedocs.io/en/latest/intro/index.html
-.. _the first tutorial: https://voc.readthedocs.io/en/latest/tutorials/tutorial-0.html
+2. Make sure to install the following packages:
+    * xorg-server (required, the Cygwin/X X Server)
+    * xorg-docs (optional, man pages)
+    * xlaunch (optional, a wizard for starting X sessions)
 
-.. _guide for first time contributors: http://pybee.org/contributing/how/first-time/what/voc/
 
-Documentation
+Tutorial
 -------------
 
-Documentation for VOC can be found on `Read The Docs`_.
+* run XWin :0 -listen tcp -multiwindow
 
-Why "VOC"?
-----------
+This will start an `X server` on Windows machine on your local machine.
 
-The `Vereenigde Oostindische Compagnie (VOC)`_, or Dutch East India Company,
-is often considered to be the world's first multinational corporation. It was
-also the first company to issue shares, and facilitate the trading of those
-shares. It was granted a 21 year monopoly to carry out trade activities in
-Asia, primarily the Spice Islands - the Dutch East Indies. They established a
-major trading port at Batavia - now Jakarta, on the island of Java (now part
-of Indonesia). As a result of their monopoly, the VOC became an incredibly
-valuable company, issuing an 18% annual dividend for almost 200 years.
+* `magic`
 
-VOC was... the world's first Enterprise using Java. (rimshot!)
 
-VOC is also a backronym for "Vestigial Output Compiler". Or "Vexing Obtuse
-Compiler". Or "Valuable Obscure Compiler". Or "Varigated Ocelot Calibrator".
-It's your choice.
 
-.. _Vereenigde Oostindische Compagnie (VOC): https://en.wikipedia.org/wiki/Dutch_East_India_Company
+.. _X server: https://jarekprzygodzki.wordpress.com/2016/07/11/running-linux-graphical-applications-in-docker-on-windows-with-cygwinx/
+.. _magic: https://manomarks.github.io/2015/12/03/docker-gui-windows.html
 
-Community
----------
-
-VOC is part of the `BeeWare suite`_. You can talk to the community through:
-
-* `@pybeeware on Twitter`_
-
-* The `pybee/general`_ channel on Gitter.
-
-We foster a welcoming and respectful community as described in our
-`BeeWare Community Code of Conduct`_.
 
 Contributing
 ------------
 
-To get started with contributing to VOC, head over to our `First Timers Guide`_.
+To get started with contributing to mu GitHub repo, pleas contact me `Slack`.
 
-If you experience problems with VOC, `log them on GitHub`_. If you
-want to contribute code, please `fork the code`_ and `submit a pull request`_.
 
-.. _BeeWare suite: http://pybee.org
-.. _Read The Docs: https://voc.readthedocs.io
-.. _@pybeeware on Twitter: https://twitter.com/pybeeware
-.. _pybee/general: https://gitter.im/pybee/general
-.. _BeeWare Community Code of Conduct: http://pybee.org/community/behavior/
-.. _First Timers Guide: http://pybee.org/contributing/how/first-time/what/voc/
-.. _log them on Github: https://github.com/pybee/voc/issues
-.. _fork the code: https://github.com/pybee/voc
-.. _submit a pull request: https://github.com/pybee/voc/pulls
+
+.. _Slack: https://slack.com/
