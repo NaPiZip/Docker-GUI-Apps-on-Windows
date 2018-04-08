@@ -33,7 +33,6 @@ The following programs are needed for the installation:
 </div>
 
 <h2>Installation</h2>
-<br/>
 <div>
 1. Follow the instruction accordingly to this <a href=https://x.cygwin.com/docs/ug/setup.html#setup-cygwin-x-installing>link<a/>.
 
@@ -45,13 +44,11 @@ The following programs are needed for the installation:
 
 <h2>Tutorial</h2>
 <div>
-* Start a Cygwin terminal and run `XWin :0 -listen tcp -multiwindow`
-
-This will start an X server on Windows machine on your local machine.
-
-* Start docker and run  `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`
-
-This will run a container call firefox the Dockerfile is listed below:
+  <ul>
+    <li>Start a Cygwin terminal and run `XWin :0 -listen tcp -multiwindow`<li/>
+    This will start an X server on Windows machine on your local machine.
+    <li>Start docker and run  `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`<li/>
+    This will run a container call firefox the Dockerfile is listed below:
 
 ```
 FROM ubuntu:14.04
@@ -79,7 +76,6 @@ Thanks to <a href="https://jarekprzygodzki.wordpress.com/2016/07/11/running-linu
 
 <h2>Contributing</h2>
 
-</br>
 <div>
 To get started with contributing to mu GitHub repo, pleas contact me <a href="https://slack.com/">Slack<a/>.
 </div>
