@@ -51,8 +51,7 @@ This will start an X server on Windows machine on your local machine.
 
 This will run a container call firefox the Dockerfile is listed below:
 
-```ENV
-
+```
 FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y firefox
@@ -69,11 +68,10 @@ RUN export uid=1000 gid=1000 && \
     USER developer
     ENV HOME /home/developer
     CMD /usr/bin/firefox
-
 ```
 
 
-Thanks to `Jarek Przygódzki. Blog programisty`_
+Thanks to `Jarek Przygódzki. Blog programisty`_.
 
 .. Jarek Przygódzki. Blog programisty: https://jarekprzygodzki.wordpress.com/2016/07/11/running-linux-graphical-applications-in-docker-on-windows-with-cygwinx/
 
