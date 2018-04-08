@@ -30,7 +30,7 @@ The following programs are needed for the installation:
 Installation
 --------
 
-1. Follow the instruction accordingly to this `link`.
+1. Follow the instruction accordingly to this `link`_.
 
 .. _link: https://x.cygwin.com/docs/ug/setup.html#setup-cygwin-x-installing
 
@@ -45,9 +45,9 @@ Tutorial
 
 * run XWin :0 -listen tcp -multiwindow
 
-This will start an `X server` on Windows machine on your local machine.
+This will start an `X server`_ on Windows machine on your local machine.
 
-* `magic`
+* `magic`_
 
 
 
