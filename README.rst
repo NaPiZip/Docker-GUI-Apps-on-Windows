@@ -1,16 +1,17 @@
 .. image:: https://stapp.space/content/images/2016/05/docker_header1.png
     :width: 72px
-    :target:
+    :target: https://www.docker.com
 
 Docker running GUI Applications on Windows
 ===
 .. image:: https://img.shields.io/badge/Document%20Version-1.0.0-brightgreen.svg
+  :target: https://github.com/NaPiZip/Docker_GUI_Apps_on_Windows
 
 .. image:: https://img.shields.io/badge/Docker-17.05.0--ce-blue.svg
-    :target: https://www.docker.com/
+    :target: https://www.docker.com
 
 .. image:: https://img.shields.io/badge/Cygwin%2FX-7.7-blue.svg
-    :target: http://x.cygwin.com/
+    :target: http://x.cygwin.com
 
 This is a tutorial showing how to run graphical user interface applications
 inside a Docker container on a Windows 10 host system using Cygwin/X.
@@ -22,7 +23,7 @@ The following programs are needed for the installation:
 * `Docker` (Docker is assumed to be installed and working correctly)
 
 .. _Cygwin/X: https://x.cygwin.com
-.. _Docker: https://www.docker.com/
+.. _Docker: https://www.docker.com
 
 
 Installation
