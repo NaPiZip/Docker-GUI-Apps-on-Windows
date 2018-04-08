@@ -48,9 +48,13 @@ The following programs are needed for the installation:
 <h2>Tutorial</h2>
 <div>
   <ul>
-    <li>Start a Cygwin terminal and run `XWin :0 -listen tcp -multiwindow`<li/>
+    <li>Start a Cygwin terminal and run<li/>
+  </ul>`XWin :0 -listen tcp -multiwindow`
     This will start an X server on Windows machine on your local machine.
-    <li>Start docker and run  `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`<li/>
+  <ul>
+    <li>Start docker and run<li/> 
+   </ul>
+  `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`
     This will run a container call firefox the Dockerfile is listed below:
 
 ```
