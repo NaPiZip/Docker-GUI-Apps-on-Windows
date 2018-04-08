@@ -34,12 +34,15 @@ The following programs are needed for the installation:
 
 <h2>Installation</h2>
 <div>
-1. Follow the instruction accordingly to this <a href=https://x.cygwin.com/docs/ug/setup.html#setup-cygwin-x-installing>link<a/>.
-
-2. Make sure to install the following packages:
-    * xorg-server (required, the Cygwin/X X Server)
-    * xorg-docs (optional, man pages)
-    * xlaunch (optional, a wizard for starting X sessions)
+  <ol>
+    <li>Follow the instruction accordingly to this <a href=https://x.cygwin.com/docs/ug/setup.html#setup-cygwin-x-installing>link<a/>.
+    </li>
+    <li>Make sure to install the following packages:</li>
+    <ul>
+      <li>xorg-server (required, the Cygwin/X X Server)</li>
+      <li>xorg-docs (optional, man pages)</li>
+      <li>xlaunch (optional, a wizard for starting X sessions)</li>
+    </ul>
 </div>
 
 <h2>Tutorial</h2>
