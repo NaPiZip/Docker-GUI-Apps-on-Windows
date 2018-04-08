@@ -3,7 +3,7 @@
     :target: https://www.docker.com
 
 Docker running GUI Applications on Windows
-===
+--------
 
 .. image:: https://img.shields.io/badge/Document%20Version-1.0.0-brightgreen.svg
   :target: https://github.com/NaPiZip/Docker_GUI_Apps_on_Windows
@@ -43,23 +43,46 @@ Installation
 Tutorial
 -------------
 
-* run XWin :0 -listen tcp -multiwindow
+* Start a Cygwin terminal and run `XWin :0 -listen tcp -multiwindow`
 
-This will start an `X server`_ on Windows machine on your local machine.
+This will start an X server on Windows machine on your local machine.
 
-* `magic`_
+* Start docker and run  `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`
+
+This will run a container call firefox the Dockerfile is listed below:
+
+```ENV
+
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get install -y firefox
+
+# Replace 1000 with your user / group id
+RUN export uid=1000 gid=1000 && \
+    mkdir -p /home/developer && \
+    echo "developer:x:${uid}:${gid}:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd && \
+    echo "developer:x:${uid}:" >> /etc/group && \
+    echo "developer ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/developer && \
+    chmod 0440 /etc/sudoers.d/developer && \
+    chown ${uid}:${gid} -R /home/developer
+
+    USER developer
+    ENV HOME /home/developer
+    CMD /usr/bin/firefox
+
+```
 
 
+Thanks to `Jarek Przygódzki. Blog programisty`_
 
-.. _X server: https://jarekprzygodzki.wordpress.com/2016/07/11/running-linux-graphical-applications-in-docker-on-windows-with-cygwinx/
-.. _magic: https://manomarks.github.io/2015/12/03/docker-gui-windows.html
+.. Jarek Przygódzki. Blog programisty: https://jarekprzygodzki.wordpress.com/2016/07/11/running-linux-graphical-applications-in-docker-on-windows-with-cygwinx/
+
 
 
 Contributing
 ------------
 
-To get started with contributing to mu GitHub repo, pleas contact me `Slack`.
-
+To get started with contributing to mu GitHub repo, pleas contact me `Slack`_.
 
 
 .. _Slack: https://slack.com/
