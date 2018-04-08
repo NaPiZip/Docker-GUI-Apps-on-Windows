@@ -46,17 +46,11 @@ The following programs are needed for the installation:
 </div>
 
 <h2>Tutorial</h2>
-<div>
-  <ul>
-    <li>Start a Cygwin terminal and run<li/>
-  </ul>`XWin :0 -listen tcp -multiwindow`
-    This will start an X server on Windows machine on your local machine.
-  <ul>
-    <li>Start docker and run<li/> 
-   </ul>
-  `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`
-    This will run a container call firefox the Dockerfile is listed below:
 
+ * Start a Cygwin terminal and run `XWin :0 -listen tcp -multiwindow` </br>
+ This will start an X server on Windows machine on your local machine.</br>
+ * Start docker and run `docker run -ti --rm -e DISPLAY=$DISPLAY:0.0 firefox`</br>
+ This will run a container call firefox the Dockerfile is listed below:</br>
 ```
 FROM ubuntu:14.04
 
@@ -78,7 +72,7 @@ RUN export uid=1000 gid=1000 && \
 
 
 Thanks to <a href="https://jarekprzygodzki.wordpress.com/2016/07/11/running-linux-graphical-applications-in-docker-on-windows-with-cygwinx/">Jarek Przygódzki. Blog programisty<a/>.
-</div>
+
 
 
 <h2>Contributing</h2>
