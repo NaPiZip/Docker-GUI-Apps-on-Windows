@@ -4,6 +4,7 @@
 
 Docker running GUI Applications on Windows
 ===
+
 .. image:: https://img.shields.io/badge/Document%20Version-1.0.0-brightgreen.svg
   :target: https://github.com/NaPiZip/Docker_GUI_Apps_on_Windows
 
@@ -18,9 +19,9 @@ inside a Docker container on a Windows 10 host system using Cygwin/X.
 
 The following programs are needed for the installation:
 
-* `Cygwin/X`
+* `Cygwin/X`_
 
-* `Docker` (Docker is assumed to be installed and working correctly)
+* `Docker`_ (Docker is assumed to be installed and working correctly)
 
 .. _Cygwin/X: https://x.cygwin.com
 .. _Docker: https://www.docker.com
